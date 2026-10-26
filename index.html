@@ -10,16 +10,16 @@
     <main>
       <section class="video-section">
         <h1>Are you tired of your screenshares looking like this?</h1>
-        <video src="video/spreadsheet-getDisplayMedia.mp4" autoplay loop muted playsinline preload="metadata"
+        <video src="assets/screenshare-browser.mp4" autoplay loop muted playsinline preload="metadata"
           aria-label="Spreadsheet shared using browser screen capture">
-          <a href="video/spreadsheet-getDisplayMedia.mp4">Download the browser screen capture example</a>.
+          <a href="assets/screenshare-browser.mp4">Download the browser screen capture example</a>.
         </video>
       </section>
 
       <section class="video-section reverse">
-        <video src="video/spreadsheet-OBS.mp4" autoplay loop muted playsinline preload="metadata"
+        <video src="assets/screenshare-obs.mp4" autoplay loop muted playsinline preload="metadata"
           aria-label="Spreadsheet shared using OBS">
-          <a href="video/spreadsheet-OBS.mp4">Download the OBS example</a>.
+          <a href="assets/screenshare-obs.mp4">Download the OBS example</a>.
         </video>
         <h2>Don't you think they should look like this instead?</h2>
       </section>
@@ -28,16 +28,13 @@
         <h2>You need WHIP.</h2>
 
         <div>
-          <p>Tools like OBS and FFmpeg give you the control to create a
-          high-quality video stream. But how do you get it into a conference call?</p>
-
           <p>OBS and FFmpeg now speak WebRTC, the protocol used for web conferencing.
-            So you can get the best of both worlds.</p>
+            Now you get high quality video with greater control in your conference.</p>
         </div>
       </section>
 
       <section aria-label="OBS WHIP settings">
-        <img src="images/whip.png" width="976" height="755" loading="lazy"
+        <img src="assets/obs-whip-settings.png" width="976" height="755" loading="lazy"
           alt="OBS Stream settings with WHIP selected, fields for the server URL and bearer token, and three simulcast layers.">
       </section>
 
@@ -51,6 +48,42 @@
 
       <section>
         <h2>FAQ</h2>
+        <div>
+          <details>
+            <summary>What is WHIP?</summary>
+            <p> Joining a WebRTC call used to require running custom code for every service. <a href="IETF-URL">WHIP</a> removed that requirement.
+            <a href="IETF-URL">WHIP</a> is an open standard that defined how with a URL + Bearer Token a client can publish WebRTC.
+            </p>
+          </details>
+          <details>
+            <summary>Why is my screenshare blurry?</summary>
+            <p>A lack of control. Your browser is picking a bitrate, codec or resolution that doesn't match what you need.
+               You aren't able to to change these settings either.</p>
+          </details>
+          <details>
+            <summary>How is OBS/FFmpeg different then browser screensharing?</summary>
+            <p>These tools give you more control. You know what content you are streaming, so you can tune better.
+               You know what hardware/network you have and what it is capable of.</p>
+          </details>
+          <details>
+            <summary>What about OBS Virtual Camera?</summary>
+            <p>OBS Virtual Camera still does encoding in the browser. You can pick the layout of your stream, but the browser may still do a bad encode.</p>
+          </details>
+          <details>
+            <summary>Where can I use WHIP + OBS today?</summary>
+            <ul>
+              <li><a href="https://developers.cloudflare.com/stream/webrtc-beta/">Cloudflare Stream</a></li>
+              <li><a href="https://optiview.dolby.com/solutions/real-time-streaming/">Dolby.io / Dolby OptiView</a></li>
+              <li><a href="https://www.twitch.tv/">Twitch</a></li>
+            </ul>
+            <p>Check out <a href="https://obsproject.com/kb/whip-streaming-guide">OBS WHIP setup guide</a> for up to date info.</p>
+          </details>
+          <details>
+            <summary>Why did you make this site, are you getting paid?</summary>
+            <p>I made it because I am frustrated. I work on WHIP in OBS, and seeing people still suffering/complaining about video streaming frustrates me.
+               I wish more people knew that things could be better.</p>
+          </details>
+        </div>
       </section>
     </main>
   </body>

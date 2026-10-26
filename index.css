@@ -35,6 +35,20 @@ p {
   margin: 0 0 1rem;
 }
 
+details {
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+details p {
+  margin: 1rem 0 0;
+}
+
 .video-section {
   max-width: none;
   grid-template-columns: minmax(0, 1fr) minmax(0, 2.5fr);
