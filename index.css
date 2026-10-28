@@ -85,6 +85,10 @@ details p {
   grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
 }
 
+.video-section.reverse figure {
+  order: -1;
+}
+
 figure {
   min-width: 0;
   margin: 0;
@@ -142,5 +146,9 @@ main > section > img {
 
   video {
     height: 55svh;
+  }
+
+  .video-section.reverse figure {
+    order: 0;
   }
 }
